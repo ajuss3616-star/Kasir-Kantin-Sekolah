@@ -1,0 +1,600 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap);
+
+:root {
+    --tinta: #222126;
+    --abu: #77747e;
+    --kertas: #faf9f6;
+    --putih: #ffffff;
+    --ungu: #a77bd8;
+    --ungu_cerah: #eee4f8;
+    --garis: #e9e6e1;
+    --hijau: #d8f36a;
+}
+
+html {
+    scroll-behavior: smooth
+}
+
+body {
+    margin: 0;
+    color: var(--tinta);
+    font-family: "Poppins", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* STYLE NAVBAR */
+
+.highlight_in {
+    color: var(--ungu);
+}
+
+.navbar {
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    background-color: var(--kertas);
+    padding: 0 7%;
+    border-bottom: 1px solid var(--garis);
+    position: sticky;
+    height: 75px;
+    top: 0;
+    backdrop-filter: blur(14px);
+    z-index: 1000;
+}
+
+.logo {
+    gap: 9px;
+    font: 700 20px "Poppins", sans-serif;
+    letter-spacing: -1px;
+    color: var(--tinta);
+}
+
+.navbar_pengantar {
+    display: flex;
+    gap: 35px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.navbar_pengantar a {
+    color: var(--abu);
+}
+
+.navbar_pengantar a:hover {
+    color: var(--ungu);
+}
+
+/* STYLE HERO */
+
+.pembuka {
+    padding: 75px 10% 75px;
+    overflow: hidden;
+    background-color: var(--putih);
+}
+
+.pembuka h1 {
+    font-size: 63px;
+    line-height: 1.1;
+    margin: 0 0 25px;
+}
+
+.konten_pembuka {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 50px;
+}
+
+.konten_pembuka>div:first-child {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.konten_pembuka>div:second-child {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.highlight_ungu {
+    color: var(--ungu);
+}
+
+.deskripsi {
+    color: var(--abu);
+    font-size: 15px;
+    line-height: 1.9;
+}
+
+.gambar_pembuka {
+    grid-column: 2;
+    grid-row: 1 / 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gambar_pembuka img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 12px;
+}
+
+.tombol_jelajah a {
+    color: var(--putih);
+    background-color: var(--tinta);
+    border-radius: 9px;
+    padding: 12px;
+    font-weight: bold;
+}
+
+.tombol_jelajah :hover {
+    background-color: var(--ungu);
+}
+
+/* ABOUT */
+
+.about {
+    padding: 75px 10% 60px;
+    overflow: hidden;
+    background-color: var(--ungu_cerah);
+}
+
+.about h1 {
+    font-size: 43px;
+    line-height: 1.1;
+    margin-bottom: 10px;
+}
+
+.konten_about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 50px;
+}
+
+.konten_about>div:first-child {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.konten_about>div:second-child {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.highlight_ungu2 {
+    color: var(--ungu);
+    font-weight: bold;
+}
+
+.deskripsi_about {
+    color: var(--abu);
+    font-size: 15px;
+    line-height: 1.9;
+}
+
+.gambar_about {
+    grid-column: 2;
+    grid-row: 1 / 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gambar_about img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 12px;
+    border: 10px dashed var(--ungu);
+    box-shadow: 0 15px 30px #b7b7b7;
+}
+
+.tombol_bagikan a {
+    color: var(--tinta);
+    background-color: var(--hijau);
+    border-radius: 9px;
+    padding: 12px;
+    font-weight: bold;
+}
+
+.tombol_bagikan :hover {
+    background-color: var(--putih);
+}
+
+/* Style Explore Talenta */
+
+
+
+/* ========================================
+   MENU KANTIN SEKOLAH
+======================================== */
+
+.explore {
+    padding: 100px 7%;
+    background-color: var(--kertas);
+    color: var(--tinta);
+}
+
+.explore_heading {
+    max-width: 650px;
+    margin: 0 auto 45px;
+    text-align: center;
+}
+
+.label_section {
+    color: var(--ungu);
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+.explore_heading h2,
+.checkout_heading h2 {
+    font-size: clamp(28px, 4vw, 40px);
+    line-height: 1.3;
+    margin-bottom: 15px;
+}
+
+.explore_pengantar {
+    color: var(--abu);
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+/* ========================================
+   KARTU MENU
+======================================== */
+
+.explore_card {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+    align-items: stretch;
+}
+
+.menu-card {
+    min-width: 0;
+    padding: 16px;
+    background-color: var(--putih);
+    border: 1px solid var(--garis);
+    border-radius: 18px;
+    overflow: hidden;
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.menu-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(34, 33, 38, 0.08);
+}
+
+/* Foto menu lokal */
+
+.menu_ikon {
+    width: 100%;
+    height: 190px;
+    overflow: hidden;
+    border-radius: 12px;
+    background-color: var(--ungu_cerah);
+    margin-bottom: 18px;
+}
+
+.menu_ikon img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.35s ease;
+}
+
+.menu-card:hover .menu_ikon img {
+    transform: scale(1.05);
+}
+
+/* Informasi menu */
+
+.menu_deskripsi h3 {
+    font-size: 20px;
+    margin-bottom: 8px;
+    color: var(--tinta);
+}
+
+.menu_deskripsi p {
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.menu_deskripsi p:not(.menu_harga) {
+    color: var(--abu);
+    min-height: 48px;
+}
+
+.menu_harga {
+    color: var(--ungu);
+    font-size: 19px !important;
+    font-weight: 700;
+    margin: 14px 0;
+}
+
+.menu_deskripsi label,
+.form_group label {
+    display: block;
+    color: var(--tinta);
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+/* Input jumlah menu */
+
+.menu_deskripsi input,
+.form_group input {
+    width: 100%;
+    min-width: 0;
+    padding: 12px 14px;
+    font-family: inherit;
+    font-size: 14px;
+    color: var(--tinta);
+    background-color: var(--putih);
+    border: 1px solid var(--garis);
+    border-radius: 10px;
+    outline: none;
+    transition: border-color 0.2s ease,
+                box-shadow 0.2s ease;
+}
+
+.menu_deskripsi input:focus,
+.form_group input:focus {
+    border-color: var(--ungu);
+    box-shadow: 0 0 0 3px rgba(167, 123, 216, 0.15);
+}
+
+/* ========================================
+   FORM PEMBAYARAN
+======================================== */
+
+.checkout {
+    max-width: 850px;
+    margin: 80px auto 0;
+    padding: 35px;
+    background-color: var(--putih);
+    border: 1px solid var(--garis);
+    border-radius: 20px;
+    box-shadow: 0 10px 35px rgba(34, 33, 38, 0.04);
+}
+
+.checkout_heading {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.checkout_heading > p:last-child {
+    color: var(--abu);
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.checkout_form {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.form_group {
+    min-width: 0;
+}
+
+.btn_hitung {
+    grid-column: 1 / -1;
+    width: 100%;
+    padding: 14px 20px;
+    color: var(--tinta);
+    background-color: var(--hijau);
+    border: none;
+    border-radius: 10px;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform 0.2s ease,
+                background-color 0.2s ease;
+}
+
+.btn_hitung:hover {
+    background-color: #c9e650;
+    transform: translateY(-2px);
+}
+
+.btn_hitung:active {
+    transform: translateY(0);
+}
+
+/* ========================================
+   HASIL PERHITUNGAN
+======================================== */
+
+.hasil {
+    margin-top: 35px;
+    padding: 25px;
+    background-color: var(--kertas);
+    border: 1px solid var(--garis);
+    border-radius: 14px;
+}
+
+.hasil[hidden],
+.struk[hidden],
+.btn_hitung[hidden] {
+    display: none !important;
+}
+
+.hasil h3 {
+    font-size: 21px;
+    margin-bottom: 20px;
+}
+
+.pesanan_baris,
+.hasil_baris {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 12px 0;
+    border-bottom: 1px solid var(--garis);
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.pesanan_baris span,
+.hasil_baris span {
+    color: var(--abu);
+    overflow-wrap: anywhere;
+}
+
+.pesanan_baris strong,
+.hasil_baris strong {
+    flex-shrink: 0;
+    text-align: right;
+    color: var(--tinta);
+}
+
+.total_baris {
+    margin-top: 5px;
+    padding: 17px 0;
+    border-bottom: 2px solid var(--tinta);
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.total_baris span,
+.total_baris strong {
+    color: var(--tinta);
+}
+
+.pesan_pembayaran {
+    margin: 20px 0;
+    padding: 14px;
+    border-radius: 10px;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.pesan_pembayaran.berhasil {
+    color: #236b43;
+    background-color: #e5f6eb;
+}
+
+.pesan_pembayaran.gagal {
+    color: #a12d2d;
+    background-color: #fdeaea;
+}
+
+.hasil .btn_hitung {
+    margin-top: 10px;
+}
+
+/* ========================================
+   STRUK PEMBAYARAN
+======================================== */
+
+.struk {
+    max-width: 500px;
+    margin: 30px auto 0;
+    padding: 28px;
+    background-color: var(--putih);
+    border: 1px dashed var(--abu);
+    border-radius: 12px;
+    color: var(--tinta);
+}
+
+.struk h2 {
+    text-align: center;
+    font-size: 22px;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+
+.struk_subjudul {
+    text-align: center;
+    color: var(--abu);
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+.struk > p {
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+.struk hr {
+    border: none;
+    border-top: 1px dashed var(--garis);
+    margin: 15px 0;
+}
+
+.struk_menu_baris {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 8px 0;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.struk_menu_baris span {
+    overflow-wrap: anywhere;
+}
+
+.struk_menu_baris strong {
+    flex-shrink: 0;
+    text-align: right;
+}
+
+.struk_penutup {
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+/* ========================================
+   CETAK STRUK
+======================================== */
+
+@media print {
+    body * {
+        visibility: hidden;
+    }
+
+    #struk,
+    #struk * {
+        visibility: visible;
+    }
+
+    #struk {
+        display: block !important;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        max-width: 500px;
+        margin: 0;
+        padding: 20px;
+        border: none;
+        border-radius: 0;
+        box-shadow: none;
+        background: white;
+    }
+
+    #struk[hidden] {
+        display: block !important;
+    }
+
+    @page {
+        margin: 10mm;
+    }
+}

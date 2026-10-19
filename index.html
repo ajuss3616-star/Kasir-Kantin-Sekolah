@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kasir Kantin - Hitung Total Belanjamu</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+    <header class="navbar">
+        <a class="logo" href="#home">
+            Kasir <span class="highlight_in">Kantin</span>-Sekolah
+        </a>
+
+        <nav class="navbar_pengantar">
+            <a href="#about">Tentang Kami</a>
+            <a href="#explore">Jelajahi Menu</a>
+        </nav>
+
+    </header>
+    <main>
+        <section class="pembuka" id="home">
+            <div class="konten_pembuka">
+                <div>
+                    <div class="kata_pembuka">
+                        <h1>
+                            Selamat datang <br>
+                            di <span class="highlight_ungu">Kantin</span> Sekolah.
+                        </h1>
+                    </div>
+                    <div class="deskripsi">
+                        <p>
+                            Nikmati berbagai pilihan menu favoritmu.<br>
+                            Pilih menu, tentukan jumlah pesanan,<br>
+                            dan hitung total belanja dengan mudah.
+                        </p>
+                    </div>
+                </div>
+                <div class="gambar_pembuka">
+                    <img src="Assets/hiasan_hero.png" alt="Gambar Hiasan">
+                </div>
+                <div class="tombol_jelajah">
+                    <a href="#explore">Jelajahi Menu</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <div class="konten_about">
+                <div>
+                    <div class="kata_about">
+                        <h1>
+                            Setiap hidangan memiliki <br>
+                            cerita, Setiap pilihan <br>
+                            menghadirkan
+                            <span class="highlight_ungu">rasa.</span>
+                        </h1>
+                    </div>
+                    <br>
+                    <div class="deskripsi_about">
+                        <p>
+                            <span class="highlight_ungu2">Kantin Sekolah</span> adalah tempat bagi siswa untuk menemukan
+                            berbagai pilihan makanan dan minuman favorit. Melalui website ini, siswa dapat melihat menu
+                            yang tersedia, mengetahui harga makanan, dan memilih hidangan sesuai keinginan dengan lebih
+                            mudah. Dengan tampilan yang praktis dan informatif, website ini membantu siswa mendapatkan
+                            informasi kantin secara cepat dan nyaman.
+                        </p>
+                    </div>
+                </div>
+                <div class="gambar_about">
+                    <img src="Assets/hiasan_about.jpg" alt="Gambar Hiasan">
+                </div>
+            </div>
+        </section>
+
+        
+
+<section class="explore" id="explore">
+    <div class="explore_heading">
+        <p class="label_section">MENU KANTIN SEKOLAH</p>
+        <h2>Jelajahi Menu Favoritmu.</h2>
+        <p class="explore_pengantar">
+            Pilih makanan dan minuman favoritmu, lalu hitung total
+            pembayaran dengan mudah.
+        </p>
+    </div>
+
+    <!-- Daftar Menu -->
+    <div class="explore_card">
+
+        <!-- Menu 1 -->
+        <div class="menu-card">
+            <div class="menu_ikon">
+                <img src="Assets/nasigoreng.jpg" alt="Nasi Goreng">
+            </div>
+            <div class="menu_deskripsi">
+                <h3>Nasi Goreng</h3>
+                <p>Nasi goreng lezat untuk menemani waktu istirahatmu.</p>
+                <p class="menu_harga">Rp15.000</p>
+                <label for="menu1">Jumlah pesanan</label>
+                <input
+                    type="number"
+                    id="menu1"
+                    class="jumlah"
+                    data-nama="Nasi Goreng"
+                    data-harga="15000"
+                    min="0"
+                    step="1"
+                    value="0"
+                >
+            </div>
+        </div>
+
+        <!-- Menu 2 -->
+        <div class="menu-card">
+            <div class="menu_ikon">
+                <img src="Assets/miegoreng.jpg" alt="Mie Goreng">
+            </div>
+            <div class="menu_deskripsi">
+                <h3>Mie Goreng</h3>
+                <p>Mie goreng gurih yang cocok dinikmati kapan saja.</p>
+                <p class="menu_harga">Rp12.000</p>
+                <label for="menu2">Jumlah pesanan</label>
+                <input
+                    type="number"
+                    id="menu2"
+                    class="jumlah"
+                    data-nama="Mie Goreng"
+                    data-harga="12000"
+                    min="0"
+                    step="1"
+                    value="0"
+                >
+            </div>
+        </div>
+
+        <!-- Menu 3 -->
+        <div class="menu-card">
+            <div class="menu_ikon">
+                <img src="Assets/ayamgeprek.jpg" alt="Ayam Geprek">
+            </div>
+            <div class="menu_deskripsi">
+                <h3>Ayam Geprek</h3>
+                <p>Ayam renyah dengan sambal yang menggugah selera.</p>
+                <p class="menu_harga">Rp18.000</p>
+                <label for="menu3">Jumlah pesanan</label>
+                <input
+                    type="number"
+                    id="menu3"
+                    class="jumlah"
+                    data-nama="Ayam Geprek"
+                    data-harga="18000"
+                    min="0"
+                    step="1"
+                    value="0"
+                >
+            </div>
+        </div>
+
+        <!-- Menu 4 -->
+        <div class="menu-card">
+            <div class="menu_ikon">
+                <img src="Assets/esteh.jpg" alt="Es Teh">
+            </div>
+            <div class="menu_deskripsi">
+                <h3>Es Teh</h3>
+                <p>Minuman segar untuk melepas dahaga saat istirahat.</p>
+                <p class="menu_harga">Rp5.000</p>
+                <label for="menu4">Jumlah pesanan</label>
+                <input
+                    type="number"
+                    id="menu4"
+                    class="jumlah"
+                    data-nama="Es Teh"
+                    data-harga="5000"
+                    min="0"
+                    step="1"
+                    value="0"
+                >
+            </div>
+        </div>
+
+        <!-- Menu 5 -->
+        <div class="menu-card">
+            <div class="menu_ikon">
+                <img src="Assets/airputih.jpg" alt="Air Mineral">
+            </div>
+            <div class="menu_deskripsi">
+                <h3>Air Mineral</h3>
+                <p>Air mineral untuk menjaga tubuh tetap terhidrasi.</p>
+                <p class="menu_harga">Rp4.000</p>
+                <label for="menu5">Jumlah pesanan</label>
+                <input
+                    type="number"
+                    id="menu5"
+                    class="jumlah"
+                    data-nama="Air Mineral"
+                    data-harga="4000"
+                    min="0"
+                    step="1"
+                    value="0"
+                >
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Form Pembayaran -->
+    <div class="checkout">
+        <div class="checkout_heading">
+            <p class="label_section">PEMBAYARAN</p>
+            <h2>Hitung Pesananmu</h2>
+            <p>Masukkan nama pelanggan dan uang yang dibayarkan.</p>
+        </div>
+
+        <div class="checkout_form">
+            <div class="form_group">
+                <label for="namaPelanggan">Nama Pelanggan</label>
+                <input
+                    type="text"
+                    id="namaPelanggan"
+                    placeholder="Masukkan nama pelanggan"
+                >
+            </div>
+
+            <div class="form_group">
+                <label for="uangBayar">Uang Pembayaran (Rp)</label>
+                <input
+                    type="number"
+                    id="uangBayar"
+                    placeholder="Contoh: 50000"
+                    min="0"
+                    step="1"
+                >
+            </div>
+
+            <button type="button" id="btnHitung" class="btn_hitung">
+                Hitung Pembayaran
+            </button>
+        </div>
+
+        <!-- Hasil Perhitungan -->
+        <div id="hasil" class="hasil" hidden>
+            <h3>Ringkasan Pesanan</h3>
+
+            <div id="daftarPesanan"></div>
+
+            <div class="hasil_baris">
+                <span>Subtotal</span>
+                <strong id="hasilSubtotal">Rp0</strong>
+            </div>
+
+            <div class="hasil_baris">
+                <span id="labelDiskon">Diskon (0%)</span>
+                <strong id="hasilDiskon">Rp0</strong>
+            </div>
+
+            <div class="hasil_baris total_baris">
+                <span>Total Pembayaran</span>
+                <strong id="hasilTotal">Rp0</strong>
+            </div>
+
+            <div class="hasil_baris">
+                <span>Uang Dibayarkan</span>
+                <strong id="hasilUang">Rp0</strong>
+            </div>
+
+            <div class="hasil_baris">
+                <span>Kembalian</span>
+                <strong id="hasilKembalian">-</strong>
+            </div>
+
+            <p id="pesanPembayaran" class="pesan_pembayaran"></p>
+
+            <button type="button" id="btnStruk" class="btn_hitung" hidden>
+                Cetak Struk
+            </button>
+        </div>
+
+        <!-- Struk Pembayaran -->
+        <div id="struk" class="struk" hidden>
+            <h2>KANTIN SEKOLAH</h2>
+            <p class="struk_subjudul">Struk Pembayaran</p>
+
+            <hr>
+
+            <p id="strukNama">Pelanggan</p>
+            <p id="strukTanggal"></p>
+
+            <hr>
+
+            <div id="strukMenu"></div>
+
+            <hr>
+
+            <div class="hasil_baris">
+                <span>Subtotal</span>
+                <strong id="strukSubtotal">Rp0</strong>
+            </div>
+
+            <div class="hasil_baris">
+                <span>Diskon</span>
+                <strong id="strukDiskon">Rp0</strong>
+            </div>
+
+            <div class="hasil_baris total_baris">
+                <span>Total</span>
+                <strong id="strukTotal">Rp0</strong>
+            </div>
+
+            <div class="hasil_baris">
+                <span>Bayar</span>
+                <strong id="strukBayar">Rp0</strong>
+            </div>
+
+            <div class="hasil_baris">
+                <span>Kembalian</span>
+                <strong id="strukKembalian">Rp0</strong>
+            </div>
+
+            <hr>
+
+            <p class="struk_penutup">
+                Terima kasih telah berbelanja!
+            </p>
+        </div>
+    </div>
+</section>
+
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
